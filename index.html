@@ -35,13 +35,13 @@
                     </button>
                 </div>
             </div>
-            <hr style="width: 100%!important; border-width: thin!important;border-color: #191C24!important;  border-style: solid;">
+            <hr style="width: 100%!important; border-width: thin!important;border-color: var(--bg1)!important;  border-style: solid;">
             <div tabindex="-1" style="display: flex; width: 100%;height: 100%; overflow-y: scroll;" id="scrollbar-tasks-listed">
                 <div id="task-list" style="display: flex;flex-direction:column-reverse;height: fit-content;width: 100%;">
         
                 </div>
             </div>
-            <hr style="width: 100%!important; border-width: thin!important;border-color: #191C24!important; border-style: solid;">
+            <hr style="width: 100%!important; border-width: thin!important;border-color: var(--bg1)!important; border-style: solid;">
             <div id="container-bottom-buttons" style="display: flex; flex-direction: row;justify-content: flex-end;padding: 0 0.5em">
                 <button tabindex="-1" id="reset-localstorage" style="all:unset">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem" fill="#3E4559" class="bi bi-trash3-fill" viewBox="0 0 16 16">
@@ -60,13 +60,13 @@
                 <span style="font-size: x-large; font-weight: bold; color: #3e4559;margin-bottom:1em">Add New Task</span>
                 <form id="new-task-form">
                     <label for="title" style="margin-bottom: 0.3em; color: #cfd1d6; font-weight: lighter; font-style: italic;font-family: 'Ubuntu Mono', ui-monospace, monospace !important">Title:</label>
-                    <input tabindex="1" spellcheck="false" type="text" id="title" name="title" required autocomplete="off" style="all: unset; background-color: #191c24 !important; color: #f1f1f1 !important; font-size: larger !important; padding: 0.4em !important; border-radius: 3px !important;">
+                    <input tabindex="1" spellcheck="false" type="text" id="title" name="title" required autocomplete="off" style="all: unset; background-color: var(--bg1) !important; color: #f1f1f1 !important; font-size: larger !important; padding: 0.4em !important; border-radius: 3px !important;">
                     
                     <label for="description" style="margin-top:1.1em;margin-bottom: 0.3em; color: #cfd1d6; font-weight: lighter; font-style: italic;font-family: 'Ubuntu Mono', ui-monospace, monospace !important">Description:</label>
-                    <textarea tabindex="2" spellcheck="false" id="description" name="description" style="all: unset; background-color: #191c24 !important; color: #f1f1f1 !important; line-height: 1.3 !important; padding: 0.3em !important; border-radius: 3px !important;resize: none!important; white-space: pre-wrap!important;height: 100%!important;overflow-wrap: break-word!important;font-weight: lighter !important;"></textarea>
+                    <textarea tabindex="2" spellcheck="false" id="description" name="description" style="all: unset; background-color: var(--bg1) !important; color: #f1f1f1 !important; line-height: 1.3 !important; padding: 0.3em !important; border-radius: 3px !important;resize: none!important; white-space: pre-wrap!important;height: 100%!important;overflow-wrap: break-word!important;font-weight: lighter !important;"></textarea>
                     
                     <label for="priority" style="margin-top:1.1em;margin-bottom: 0.3em; color: #cfd1d6; font-weight: lighter; font-style: italic;font-family: 'Ubuntu Mono', ui-monospace, monospace !important">Priority:</label>
-                    <select tabindex="3" id="priority" name="priority" style="all: unset; background-color: #12141a !important; padding: 0.4em !important; border-radius: 4px !important;">
+                    <select tabindex="3" id="priority" name="priority" style="all: unset; background-color: var(--bg2) !important; padding: 0.4em !important; border-radius: 4px !important;">
                         <option value="low">Low</option>
                         <option value="medium">Medium</option>
                         <option value="high">High</option>
@@ -105,9 +105,9 @@
                             <div style="display: flex; flex-direction: row;">
                                 <div id="circle-priority" style="border-radius: 100%;height: 1.2em; width: 1.2em;margin-right: 0.5em;"></div>
                                 <select tabindex="7" id="priority-task-selected" name="priority" style="all:unset; height: fit-content; cursor: pointer;font-size: medium; font-weight: 500; font-style: italic;">
-                                    <option id="low-option" value="low" style="background-color: #12141A !important;">Low</option>
-                                    <option id="medium-option" value="medium" style="background-color: #12141A !important;">Medium</option>
-                                    <option id="high-option" value="high" style="background-color: #12141A !important;">High</option>
+                                    <option id="low-option" value="low" style="background-color: var(--bg2) !important;">Low</option>
+                                    <option id="medium-option" value="medium" style="background-color: var(--bg2) !important;">Medium</option>
+                                    <option id="high-option" value="high" style="background-color: var(--bg2) !important;">High</option>
                                 </select>
                             </div>
                             <div style="display: flex; flex-direction: row-reverse;">
@@ -152,14 +152,14 @@
         <div id="bin-div">
             <div id="container-bin-div-all" style="width: 100%; height: 100%; display: flex; flex-direction: row;">
                 <div id="container-bin-tasks">
-                    <span style="color: #1e212b; font-size: smaller; text-transform: uppercase; font-family: 'Ubuntu Mono', ui-monospace, monospace; font-weight: bold;">Last 7 days removed tasks</span>
-                    <hr style="width: 100%!important; border-width: thin!important;border-color: #191C24!important;  border-style: solid;">
+                    <span style="color: var(--bg3); font-size: smaller; text-transform: uppercase; font-family: 'Ubuntu Mono', ui-monospace, monospace; font-weight: bold;">Last 7 days removed tasks</span>
+                    <hr style="width: 100%!important; border-width: thin!important;border-color: var(--bg1)!important;  border-style: solid;">
                     <div style="display: flex; width: 100%;height: 100%; overflow-y: scroll;" id="scrollbar-tasks-bin">
                         <div id="bin-tasks" style="display: flex;flex-direction:column-reverse;height: fit-content;width: 100%;">
                 
                         </div>
                     </div>
-                    <hr style="width: 100%!important; border-width: thin!important;border-color: #191C24!important; border-style: solid;">
+                    <hr style="width: 100%!important; border-width: thin!important;border-color: var(--bg1)!important; border-style: solid;">
                     <button tabindex="-1" id="reset-all-definitely" onclick="ResetAllDefinitely()" style="all:unset;padding: 0.5em 0.9em; background-color: #3E4559; border-radius: 0.6em; margin-bottom: 0.8em;">
                         <div style="display: flex;flex-direction: row;align-items: center;justify-content: center;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFFFFF" class="bi bi-trash3" viewBox="0 0 16 16" style="margin-right: .2em;">
@@ -172,7 +172,7 @@
                 <div style="flex:auto;">
                     <button tabindex="-1" id="go-back-previous" style="all: unset; width: 100% !important; height: 100% !important; display: flex !important; justify-content: flex-start !important; align-items: center!important;">
                         <div id="bar-button-go-back">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="#12141A" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="var(--bg2)" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
                                     <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
                                 </svg>    
                         </div>
@@ -203,14 +203,24 @@
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+    :root{
+        --bg1: #191C24;
+        --bg1_50: #191C2450;
+        --bg2: #12141A;
+        --color_text: whitesmoke;
+        --bg3: #1E212B;
+        
+    }
+
     body{
-        background-color: #191C24;
+        background-color: var(--bg1);
         margin: 0 !important;
         padding: 0 !important;
         display: flex;
         flex-direction: row;
         font-family: Ubuntu, system-ui, sans-serif;
-        color: whitesmoke;
+        color: var(--color_text);
         overflow-x: hidden;
         width: 100vw;
         height: 100vh;
@@ -218,7 +228,7 @@
     }
     #container-tasks-buttons{
         width: 30vw !important;
-        background-color: #12141A;
+        background-color: var(--bg2);
         height: 100vh !important;
         -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
         -moz-box-sizing: border-box;    /* Firefox, other Gecko */
@@ -229,7 +239,7 @@
     }
     #container-bin-tasks{
         width: 30vw !important;
-        background-color: #12141A;
+        background-color: var(--bg2);
         height: 100vh !important;
         -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
         -moz-box-sizing: border-box;    /* Firefox, other Gecko */
@@ -243,7 +253,7 @@
         height: 100%;
         display: flex;
         align-items: center;
-        background-color: #191c24;
+        background-color: var(--bg1);
     }
     #go-back-previous:hover > #bar-button-go-back{
         background-color: #292c37;
@@ -260,12 +270,12 @@
     #task-form {
         display: none;
         flex-direction: column;
-        background-color: #1E212B;
+        background-color: var(--bg3);
         border-radius: 0.7em;
         height: 100%;
         width: 100%;
-        border-top: 0.7em solid #12141A;
-        border-bottom: 0.7em solid #12141A;
+        border-top: 0.7em solid var(--bg2);
+        border-bottom: 0.7em solid var(--bg2);
         box-shadow: 4px 4px 10px 1px #00000026;
         -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
         -moz-box-sizing: border-box;    /* Firefox, other Gecko */
@@ -283,16 +293,16 @@
         display: none;
         flex-direction: column;
         justify-content: space-between;
-        background-color: #1E212B;
+        background-color: var(--bg3);
         border-radius: 0.7em;
         height: 100%;
         width: 100%;
-        border-top: 0.7em solid #12141A;
-        border-bottom: 0.7em solid #12141A;
+        border-top: 0.7em solid var(--bg2);
+        border-bottom: 0.7em solid var(--bg2);
         box-shadow: 4px 4px 10px 1px #00000026;
     }
     #container-cronometer{
-        background-color: #12141A;
+        background-color: var(--bg2);
         width: 100%;
         -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
         -moz-box-sizing: border-box;    /* Firefox, other Gecko */
@@ -373,7 +383,7 @@
         cursor: pointer !important
     }
     .dropdown-content-icon-orderby > button{
-        background-color: #12141A !important;
+        background-color: var(--bg2) !important;
     }
     #add-task-btn:hover svg{
         fill: #cfd1d6 !important;    
@@ -397,7 +407,7 @@
     .task-listed{
         margin-bottom: 0.5em;
         /* padding: 1.1em 0.6em 1.1em 0.8em; */
-        background-color: #191c2450; 
+        background-color: var(--bg1_50); 
         border-radius: .4em;
         display: flex; 
         align-items: flex-start; 
@@ -446,7 +456,7 @@
     .bin-task-listed{
         border-left: 0.4em solid #292c37;
         margin-bottom: 0.5em;
-        background-color: #191c2450; 
+        background-color: var(--bg1_50); 
         border-radius: .4em;
         display: flex; 
         align-items: flex-start; 
@@ -489,7 +499,7 @@
     #navbar-bottom-short-view{
         width: 100%;
         padding: 0.8rem 0.5rem;
-        background-color: #12141A;
+        background-color: var(--bg2);
         border-top: .5em solid #191C24;
         -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
         -moz-box-sizing: border-box;    /* Firefox, other Gecko */
@@ -797,6 +807,14 @@
         try{ UpdateTask() }
         catch (e) {}
         $("#task-selected")[0].style.display = "none";
+
+        let width_screen = screen.width;
+        if(width_screen<=959){
+            document.getElementById("container-tasks-buttons").style.display = "flex";
+            document.getElementById("container-tasks-infos").style.display = "none";
+            document.getElementById("toggle-button-list-tasks").value = "close";
+            document.getElementById("toggle-button-list-tasks").classList.toggle("rot");
+        }
     }
 
     window.addEventListener('beforeunload', (event) => {
